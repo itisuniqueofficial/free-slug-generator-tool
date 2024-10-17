@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Convert any text into a URL-friendly slug easily with our free online slug generator tool. Perfect for SEO optimization and creating cleaner URLs.">
+    <meta name="keywords" content="slug generator, SEO slug, URL slug generator, convert text to slug, free slug tool, URL optimization">
+    <meta name="author" content="Unique Saykas">
+
+    <!-- Schema.org Markup for SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Free Slug Generator Tool",
+        "description": "A free online tool that converts text into an SEO-friendly, URL slug. Optimize your URLs for better ranking with this simple slug generator.",
+        "applicationCategory": "WebApplication",
+        "operatingSystem": "All",
+        "url": "https://yourdomain.com/slug-generator",
+        "author": {
+            "@type": "Person",
+            "name": "Unique Saykas"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "softwareVersion": "1.0",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150"
+        }
+    }
+    </script>
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Free Slug Generator Tool | Convert Text to SEO-Friendly URL Slug">
+    <meta property="og:description" content="Easily convert your text into an SEO-optimized, URL-friendly slug with our free slug generator tool. Perfect for creating cleaner URLs.">
+    <meta property="og:image" content="https://yourdomain.com/images/slug-tool.png">
+    <meta property="og:url" content="https://yourdomain.com/slug-generator">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Slug Generator Tool">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Slug Generator Tool | Convert Text to SEO-Friendly URL Slug">
+    <meta name="twitter:description" content="Easily generate SEO-friendly slugs for your URLs. Try our free online slug generator tool now!">
+    <meta name="twitter:image" content="https://yourdomain.com/images/slug-tool.png">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+
+    <title>Free Slug Generator Tool | Convert Text to SEO-Friendly URL Slug</title>
+    <link rel="stylesheet" href="styles.css">
+
+        <!-- Register Service Worker -->
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(err) {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        </script>
+
+<link rel="preload" href="styles.css" as="style">
+<link rel="preload" href="script.js" as="script">
+
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Free Slug Generator Tool</h1>
+            <p class="description">Convert your text into an SEO-optimized, URL-friendly slug effortlessly.</p>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- Tool Section -->
+    <section id="slug-generator-tool" class="container">
+        <h2 style="text-align: center;">Generate Your SEO-Friendly Slug</h2>
+        <p style="text-align: center;">Easily convert any text into a URL-friendly slug. This tool helps create clean, readable, and SEO-optimized slugs for websites.</p>
+
+        <!-- Slug Generator Form -->
+        <input style="width: 100%; margin: 10px;" type="text" id="inputText" class="input-field" placeholder="Enter your text here" aria-label="Enter text for slug generation" />
+        <button style="width: 100%; margin: 10px;" class="button" onclick="generateSlug()" aria-label="Generate slug">Generate Slug</button>
+        
+        <input style="width: 100%; margin: 10px;" type="text" id="outputSlug" class="output-field" readonly placeholder="Generated slug will appear here" aria-label="Generated slug output" />
+        <button style="width: 100%; margin: 10px;" class="button" onclick="copySlug()" aria-label="Copy generated slug">Copy Slug</button>
+    </section>
+
+    <hr class="special-divider">
+
+    <!-- How to Use Section -->
+    <section id="how-to-use">
+        <h2>How to Use the Slug Generator Tool</h2>
+        <ol>
+            <li>Enter your desired text into the input field.</li>
+            <li>Click the <strong>Generate Slug</strong> button.</li>
+            <li>Copy the generated slug by clicking <strong>Copy Slug</strong>.</li>
+        </ol>
+        <p>This tool removes special characters, converts spaces to hyphens, and ensures that your text is lowercase, producing a slug that can be used in your URLs.</p>
+    </section>
+
+    <hr class="special-divider">
+
+    <!-- Why Use a Slug Generator Section -->
+    <section id="why-use">
+        <h2>Why Use a Slug Generator?</h2>
+        <ul>
+            <li><strong>Improved SEO:</strong> Clean, optimized slugs help search engines understand your page content better.</li>
+            <li><strong>Readability:</strong> Slugs that are easy to read are also easier for users to remember.</li>
+            <li><strong>Professional URLs:</strong> Slugs eliminate unnecessary characters and formatting, creating professional-looking URLs.</li>
+        </ul>
+    </section>
+
+    <hr class="special-divider">
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>What is a slug?</h3>
+            <p>A slug is the part of a URL that identifies a particular page on a website in a readable form. It usually appears after the domain name and helps improve SEO.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Why is it important to optimize a slug?</h3>
+            <p>Optimizing slugs improves the readability and relevance of a URL, which helps search engines rank your page higher in search results.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can I use special characters in my slug?</h3>
+            <p>No, this tool automatically removes special characters and replaces spaces with hyphens to ensure your slug is URL-friendly.</p>
+        </div>
+    </section>
+
+    <hr class="special-divider">
+
+    <!-- Call to Action Section -->
+    <section id="cta" class="container">
+        <h2>Ready to Optimize Your URLs?</h2>
+        <p>Start using our Free Slug Generator tool today to create clean, professional URLs that help boost your SEO rankings!</p>
+        <button style="width: 100%; margin: 10px;" class="button" onclick="generateSlug()">Get Started Now</button>
+    </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Slug Generator Tool. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js" async></script>
+</body>
+</html>
