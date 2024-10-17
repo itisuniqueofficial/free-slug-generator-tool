@@ -22,3 +22,39 @@ function copySlug() {
     // Display a short alert to confirm slug was copied
     alert("Slug copied to clipboard: " + slugField.value);
 }
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, (error) => {
+        console.log('ServiceWorker registration failed: ', error);
+      });
+  });
+}
+
+
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const installButton = document.createElement('button');
+  installButton.textContent = 'Install App';
+  installButton.style.width = '100%';
+  installButton.style.margin = '10px';
+  document.querySelector('body').appendChild(installButton);
+
+  installButton.addEventListener('click', () => {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null;
+    });
+  });
+});
