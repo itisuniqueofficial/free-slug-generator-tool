@@ -2,7 +2,7 @@
     "name": "Free Slug Generator Tool",
     "short_name": "Slug Generator",
     "description": "A free online tool that converts text into an SEO-friendly, URL slug.",
-    "start_url": "/",
+    "start_url": "https://itisuniqueofficial.github.io/free-slug-generator-tool/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#28a745",
